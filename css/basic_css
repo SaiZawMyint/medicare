@@ -1,0 +1,13 @@
+.p_back{
+	width: 45px;
+	height: 100%;
+	padding: 0;
+	float: left;
+	cursor: pointer;
+	background: url(Img/back.png) no-repeat;
+	background-size: 80% 80%;
+	background-position: center;
+}
+.p_back:hover{
+	background-color: #0000003f;
+}

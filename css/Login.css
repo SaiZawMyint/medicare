@@ -1,0 +1,275 @@
+body{
+	font-family: Arial Rounded MT;
+	color: #ffffff;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+#mian_canvas{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: url(Img/mdb.jpg) no-repeat;
+	
+	background-size:100% 100%;
+}
+#login_box{
+	width: 40%;
+	min-width: 400px;
+	height: auto;
+	top: 50%;
+	left: 50%;
+	transform: translate(-80%,-50%);
+	border-radius: 10px;
+	background-size: 100% 100%;
+	position: absolute;
+	box-shadow: 1px 5px 10px rgb(0,0,0,0.5);
+
+}
+.alert-in{
+	border-style: none;
+	border-radius:5px;
+	background-color: red;
+	box-shadow:1px 3px 10px 1px;
+	margin:auto;
+	font-size: 1.2em;
+	padding:5px;
+	color:black;
+	cursor: pointer;
+	text-decoration: none;
+	margin-bottom: 30px;
+}
+.header{
+	width: 90%;
+	height: 5%;
+	padding: 5px;
+	text-align: center;
+	margin: 5%;
+	color: #ffffff;
+	font-size: 1.7em;
+	font-weight: 500;
+	text-shadow: 1px 5px 1px #3434;
+	cursor: default;
+}
+#in_canvas{
+	width: 80%;
+	margin-left: 10%;
+	height: 60%;
+	max-height: 70%;
+}
+.text-in{
+	font-family: Arial Rounded MT;
+	width: 90%;
+	margin-left: 5%;
+	height: 35px;
+	border-style: none;
+	border-radius: 5px;
+	padding-left: 10px;
+}
+
+.s{
+	display: none;
+	width: 80%;
+	margin-left: 5%;
+	height: auto;
+	background-color: #0000002b;
+	margin-top: 5px ;
+	margin-bottom: 5px;
+	padding: 10px;
+	float: left;
+	text-align:left;
+	color: #343434;
+	border-radius: 5px;
+}
+#footer{
+	width: 75%;
+	height: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	padding:10px;
+}
+#footer a{
+	text-decoration: none;
+}
+#footer .Submit:hover{
+	background: linear-gradient(to right,#1e08ecb0,#1e08ec);
+	border: 0;
+}
+.Submit{
+	cursor: pointer;
+	width: 100%;
+	text-align: center;
+	padding: 10px 0px;
+	border-style: none;
+	border: 0;
+	border-radius: 15px;
+	background: linear-gradient(to right,#1e08ec,#1e08ecb0);
+	padding:5px 10px 5px 10px;
+	color: #ffc;
+	font-size:1.3em;
+	margin-right: 10px;
+	
+}
+
+.an-join{
+	cursor: pointer;
+	width: fit-content;
+	text-align: left;
+	padding: 10px 0px;
+	border-style: none;
+	border: 0;
+	border-radius: 15px;
+	padding:5px 10px 5px 10px;
+	background-color: transparent;
+	color: #1e08ec;
+	font-size:1.3em;
+	margin-right: 10px;
+	
+}
+.an-join:hover{
+	background-color: transparent;
+}
+.create{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.rg{
+	float: left;
+	width: 20px;
+	height: 20px;
+	background: url(img/right.png) no-repeat;
+	background-size:100% 100%;
+	margin-right: 5px;
+}
+.ag{
+	float: left;
+	width: 20px;
+	height:20px;
+	background: url(Img/alert.png) no-repeat;
+	background-size: 100% 100%;
+	margin-right: 5px;
+}
+#f{
+	float: left;
+}
+button:hover{
+	border: 1px solid;
+}
+input:focus{
+	box-shadow: 1px 5px 10px rgb(1,5,3);
+}
+#ongoing_pg{
+	width: 100%;
+	height: 100%;
+	cursor: progress;
+	display: none;
+	position: absolute;
+}
+#cms{
+	width: auto;
+	height: auto;
+	top:80%;
+	left:70%;
+	position: absolute;
+}
+@keyframes cmsani{
+	70%{
+		background-color: #005e0089;
+	}
+}
+#cms ul{
+	list-style: none;
+}
+#cms li{
+	cursor: pointer;
+	float:left;
+	margin: 5px;
+	padding: 5px;
+}
+.cmsicons{
+	width:45px;
+	height:45px;
+	background: url(Img/cmsicon.png) no-repeat;
+	background-size: 100% 100%;
+	padding: 10px;
+}
+.htap{
+	padding: 10px;
+	color: #ffc;
+	background-color: green;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	margin-top: 5px;	
+}
+#cms ul ul{
+	margin-left:50px;
+	float:left;
+	list-style: none;
+}
+#cms ul li{
+	color: #ffc;
+}
+.loading-page{
+	height: auto;
+	float: left;
+	padding: 20px 0px 20px 50px;
+	margin-bottom: 20px;
+	background: url(Img/loading_icon.gif) no-repeat;
+	background-size: 45px 45px;
+	background-position: left;
+}
+
+@media only screen and (max-width:1000px){
+	#login_box{
+		width: 100%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		margin: 0;
+		box-shadow: none;
+		border-right: none;
+	}
+	.header{
+		font-size: 3.5em;
+	}
+	.text-in{
+		height: 120px;
+		font-size: 2.5em;
+		border-radius: 10px;
+	}
+	.s{
+		font-size: 2.5em;
+		padding: 20px 0px;
+	}
+	.ag{
+		width: 2em;
+		height: 2em;
+	}
+	.rg{
+		width: 2em;
+		height: 2em;
+	}
+	#footer {
+		font-size: 2em;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#in_canvas{
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.Submit{
+		font-size: 2em;
+		width: 100%;
+		text-align: center;
+		padding: 10px 0px;
+	}
+	.loading-page{
+		padding: 20px 0px 20px 95px;
+		background-size: 90px 90px;
+	}
+}

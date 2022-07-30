@@ -1,0 +1,156 @@
+body{
+	background-color: #B2DFDB;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+.mg-header{
+	width: 80%;
+	margin-left: 10%;
+}
+.main-body{
+	width: 80%;
+	min-height: 500px;
+	margin-left: 10%;
+	display: flex;
+	overflow: hidden;
+	flex-direction: column;
+}
+.header-col{
+	width: 100%;
+	display: flex;
+}
+.mg-col-1{
+	padding-top: 60px;
+	width: 50%;
+	height: fit-content;
+}
+.mg-col-1 img{
+	width: 80%;
+	margin: 10px 10%;
+}
+.mg-col-1 h3{
+	font-size: 3em;
+	padding:5px 0px;
+	width: fit-content;
+}
+.mg-col-1 p{
+	padding: 30px;
+	font-size: 1.3em;
+	overflow: hidden;
+
+}
+.mg-col-2{
+	width: 50%;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+}
+.ps{
+	width: 80%;
+	max-height: 350px;
+	border-radius: 15px;
+	box-shadow: 1px 3px 10px rgb(0,0,0,0.4);
+	padding: 10px;
+	font-size: 1.3em;
+	margin: 100px 50px;
+	overflow: hidden;
+	text-align: justify;
+}
+.mg-col-2 ul{
+	margin-left: 50px;
+	font-size: 1.3em;
+	list-style: none;
+}
+h3{
+	font-size: 3.5em;
+	padding: 30px 0px;
+}
+.mg-col-2 p{
+	text-align: justify;
+	font-size: 1.3em;
+	padding-top: 70px;
+	color: #343434;
+	overflow: hidden;
+}
+.contents-col{
+	padding: 10px;
+	display: flex;
+	font-size: 1.3em;
+	text-align: justify;
+}
+
+.c-col-1{
+	width: 46%;
+	margin: 2%;
+	overflow: hidden;
+}
+.c-col-2{
+	width: 46%;
+	margin: 2%;
+	overflow: hidden;
+}
+.u-header-link {
+	font-size: 1.5em;
+	border-radius: 15px;
+	background: linear-gradient(to right,#2284d8,blue);
+	color: #ffffff;
+	box-shadow: 1px 5px 10px rgb(0,0,0,0.5);
+	border: 0;
+	text-decoration: none;
+	padding: 10px;
+	cursor: pointer;
+	margin:10px;
+	float: right;
+}
+.u-header-link:hover{
+	background: linear-gradient(to right,blue,#2284d8);
+	box-shadow: 3px 5px 10px rgb(0,0,0,0.5);
+}
+@media only screen and (max-width:1000px) {
+
+	.main-body{
+		width: 100%;
+		margin-left: 0px;
+	}
+	.mg-header{
+		width: 100%;
+		margin-left: 0px;
+	}
+	.header-col{
+		flex-direction: column;
+	}
+	.mg-col-1{
+		width: 100%;
+		padding-top: 110px;
+	}
+	.mg-col-2{
+		width: 100%;
+	}
+	.mg-col-2 ul{
+		margin-top: 100px;
+		margin-left: 100px;
+		transform: none;
+		font-size: 3em;
+	}
+	.ps{
+		font-size: 3em;
+		max-height: none;
+	}
+	.contents-col{
+		flex-direction: column;
+		font-size: 3em;
+	}
+	.c-col-1{
+		width: 90%;
+		margin: 5%;
+	}
+	.c-col-2{
+		width: 90%;
+		margin: 5%;
+	}
+	.u-header-link {
+	font-size: 3em;
+}
+}

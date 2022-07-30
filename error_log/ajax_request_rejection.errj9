@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Event Unavailable</title>
+<link rel="icon" type="image/png" href="/Medicare/css/Img/page_not_found.png">
+<script type="text/javascript" src="/Medicare/js/event.js"></script>
+<style type="text/css">
+body{
+font-family: arial;
+}
+*{
+margin: 0;
+padding: 0;
+}
+.disbox{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+width: 650px;
+height: 500px;
+background: url(/Medicare/css/Img/page_not_found.png) no-repeat;
+background-position: center;
+background-size: 80% 80%;
+text-align: center;
+}
+.back{
+	padding: 5px;
+	background-color: #00b4c3;
+	border-radius: 5px;
+	color: #ffffff;
+	box-shadow: 1px 7px 10px black;
+	cursor: pointer;
+}
+.back:hover{
+	box-shadow:inset 1px 7px 10px black;
+}
+@media only screen and (max-width:1000px){
+.disbox{
+width: 100%;
+min-height: 600px;
+font-size: 3em;
+}
+}
+</style>
+</head>
+<body>
+<div class="disbox">
+	<h3>This event is unavailabe!</h3><br>
+<span onclick="back()" class="back"><small>Back</small></span><br><br><a href="/Medicare/Description.php">Description Page</a></div>
+</body>
+</html>

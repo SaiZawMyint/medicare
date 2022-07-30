@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ex</title>
+	<meta charset="utf-8">
+	<script>
+		function lee() {
+			var message="hello #world# kj #kjgmn";
+		var get="";
+		var h=message.lenght;
+		var count=0;
+
+		for (var i = 0; i < message.length; i++) {
+			if (message.charAt(i)==='#') {
+					count++;
+				}
+		}
+
+
+		if (count>1) {
+			
+		for (var i = 0; i < count; i++) {
+			var news=message;
+			for (var j = 0; j < news.length; j++) {
+				
+			if (news.charAt(j)==='#') {
+					var nn=news.slice(j,news.length+1);
+					get=nn.slice(0,nn.indexOf(' '));
+					console.log(get);
+					message=message.replace(get,"[shpl]"+get+"[ehpl]");
+					news=news.slice(j,news.length);
+						
+				}
+			}
+		
+			
+		}	
+		}else{
+			
+					
+					for (var j = 0; j < message.length; j++) {
+					
+							if (message.charAt(j)==='#') {
+								var nn=message.slice(j,message.length);
+								if (nn.indexOf(' ') === -1) {
+									get=nn.slice(j,nn.length);
+									message=message.replace(get,"[shpl]"+get+"[ehpl]");
+									
+								}else{
+									get=nn.slice(j,nn.indexOf(' '));
+									message=message.replace(get,"[shpl]"+get+"[ehpl]");
+
+								}
+									
+									
+								}
+					}
+				
+					
+		}
+			
+
+		console.log(message);
+
+		document.getElementById("lee").innerHTML=message;
+		}
+		
+
+	</script>
+</head>
+<body>
+<div id="lee"></div>
+<button onclick="lee()">Lee</button>
+
+</body>
+</html>
